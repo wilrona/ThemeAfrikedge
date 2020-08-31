@@ -1,0 +1,206 @@
+:root{
+    --color-primary : #3C4583;
+    --color-secondary : #080F3E;
+    --color-thirth : #F2F4FF;
+    --color-quarter : #0C70CD;
+    --color : #fff;
+
+    --lh: 1.4em;
+}
+
+body, html{
+    /* color: var(--color) !important; */
+    font-family: 'Lato', sans-serif;
+}
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6, .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge, .uk-heading-2xlarge{
+    font-family: 'Gotu', sans-serif !important;
+}
+
+.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle{
+    font-family: 'Gotu', sans-serif !important;
+}
+
+.uk-nav-header .uk-logo img{
+    height: 50px;
+}
+
+.uk-nav-header .uk-navbar-nav > li > a{
+    /* font-size: 0.8rem; */
+    text-transform: capitalize;
+    
+}
+
+.uk-nav-header .uk-navbar-nav > li.uk-active > a, .uk-nav-header .uk-navbar-nav > li > a:hover{
+    color: var(--color-primary) !important;
+    font-weight: bold;
+    
+}
+
+.uk-background-afrikedge-2 {
+    background-color: var(--color-primary) !important;    
+}
+
+.uk-background-afrikedge-3 {
+    background-color: var(--color-thirth) !important;    
+}
+
+.uk-background-afrikedge-4{
+    background-color: var(--color) !important;  
+}
+
+
+.uk-subtitle{
+    text-transform: uppercase !important;
+}
+
+.uk-subtitle, .uk-title, .uk-color-white {
+    color: var(--color) !important;
+}
+
+.uk-background-afrikedge{
+    background-color: var(--color-secondary) !important;
+}
+@media (min-width: 1199px){
+
+    .uk-background-afrikedge-2.uk-section-rounded-left:after{
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 3px;
+        bottom: 0;
+        right: 0;
+        background-image: url('../img/green-bg.png');
+        width: 60%;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+    .uk-section-rounded-left{
+        position: relative !important;
+        border-radius: 20px 0 0  20px;
+    }
+
+    .uk-unmargin{
+        margin-top: -100px;
+    }
+}
+
+.uk-color-primaire{
+    color : var(--color-primary) !important;
+}
+
+.uk-subnav-afrikedge > li > a, .uk-subnav-afrikedge-2 > li > a{
+    background-color:  var(--color-thirth) !important;
+    color: var(--color-primary) !important;
+    padding: 10px 30px !important;
+    margin-top: 10px;
+    text-transform: capitalize !important;
+}
+
+.uk-subnav-afrikedge > .uk-active > a, .uk-subnav-afrikedge > li > a:hover, .uk-subnav-afrikedge-2 > .uk-active> a, .uk-subnav-afrikedge-2 > li > a:hover {
+    background-color:  var(--color-primary) !important;
+    color: var(--color) !important;
+    border: none;
+}
+
+.uk-subnav-afrikedge-2 > li > a {
+    padding: 10px 30px !important;
+    font-size: 18px !important;
+    border: 1px solid #e5e5e5;   
+
+}
+
+
+.uk-truncate-overflow{
+    --max-line : 3;
+    position: relative;
+    max-height: calc(var(--lh) * var(--max-line));
+    overflow: hidden;
+}
+
+.uk-social-icon{
+    border-radius: 50%;
+    background-color: var(--color) !important;
+    padding: 10px;
+    color : var(--color-primary) !important
+}
+
+.uk-copyright{
+    border-top: 1px solid #F2F4FF;
+}
+
+#canvas{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;	
+    top: 0;
+    bottom: 0;	
+}
+
+.uk-offcanvas-bar{
+    background-color: #fff;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li.uk-active > a, .uk-offcanvas-bar .uk-nav-default > li > a:hover {    
+    color: var(--color-secondary) !important;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a {    
+    color: #666 !important;
+}
+
+.uk-sticky.uk-active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+.home .uk-position-custom-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.uk-accordion .uk-accordion-title{
+    background-color: #fff !important;
+    color : var(--color-primary) !important;
+    padding: 20px !important;
+}
+
+.uk-services {
+    border: 1px solid var(--color-primary);
+}
+
+.uk-services-single .uk-nav > li > a{
+    padding: 14px 15px 14px 18px;
+    background-color:var(--color-thirth);
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.uk-services-single .uk-nav > .uk-active > a, .uk-services-single .uk-nav > li > a:hover{
+    background-color:var(--color-primary);
+    color: var(--color);
+}
+
+.uk-form-devis .uk-input, .uk-form-devis .uk-select, .uk-form-devis .uk-textarea {
+    background-color: var(--color-thirth) !important;
+    color: var(--color-secondary) !important;
+    border: none !important;
+    padding: 20px;
+}
+
+::placeholder
+{
+    color: var(--color-secondary) !important;
+    opacity: .5;
+}
+
+.crellyslider > .cs-progress-bar{
+    bottom: 0 !important;
+    background-color: var(--color-primary) !important;
+    top: auto;
+}
+
